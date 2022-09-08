@@ -4,9 +4,9 @@ import Countdown ,{ zeroPad, calcTimeDelta, formatTimeDelta } from 'react-countd
 import  {TwitterTweetEmbed, TwitterMentionButton, TwitterTimelineEmbed } from 'react-twitter-embed';  
 
 
-const renderer = ({ days, hours, minutes, seconds }) => (
+const renderer = ({ days, hours, minutes, seconds, milliseconds }) => (
   <span style={{fontWeight: 'bold', color: "red"}} >
-     {zeroPad(days)} Days : {zeroPad(hours)} hours : {zeroPad(minutes)} minutes : {zeroPad(seconds) } seconds
+     {zeroPad(days)} Days : {zeroPad(hours)} hours : {zeroPad(minutes)} minutes : {zeroPad(seconds) } seconds :  {zeroPad(milliseconds) } milliseconds
   </span>
 );
 
