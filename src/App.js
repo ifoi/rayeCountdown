@@ -6,7 +6,7 @@ import  {TwitterTweetEmbed, TwitterMentionButton, TwitterTimelineEmbed } from 'r
 
 const renderer = ({ days, hours, minutes, seconds, milliseconds }) => (
   <span style={{fontWeight: 'bold', color: "red"}} >
-     {zeroPad(days)} Days : {zeroPad(hours)} hours : {zeroPad(minutes)} minutes : {zeroPad(seconds) } seconds :  {zeroPad(milliseconds) } milliseconds
+     {zeroPad(days)} Days : {zeroPad(hours)} hours : {zeroPad(minutes)} minutes : {zeroPad(seconds) } seconds :  {milliseconds } milliseconds
   </span>
 );
 
@@ -20,11 +20,9 @@ function App() {
 
   
         <p>
-          Raye plans to level up by Dec 31st   <TwitterMentionButton
-    screenName={'rayyegotti'}
-/>
+          R.A plans to level up by Dec 31st   <p/>
    They asked us to keep them accountable.
-            so I setup the Raye level up Countdown.
+            so I setup the R.A  level up Countdown.
         </p>
         <Countdown
         date={new Date("Dec 31 2022" )}
@@ -38,13 +36,14 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-           Created by Ifo 
-        </a>
+           Created by Ifo  <TwitterMentionButton
+    screenName={'afrohealer'}
+/>
+           </a>
+   
       </header>
       <main>
-      <TwitterMentionButton
-    screenName={'rayyegotti'}
-  />
+      
       </main>
     </div>
   );

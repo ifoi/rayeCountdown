@@ -1,3 +1,7 @@
+# Raye Level up Countdown is
+
+Was created with react-countdown https://www.npmjs.com/package/react-countdown and react-twitter-embed https://www.npmjs.com/package/react-twitter-embed
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
