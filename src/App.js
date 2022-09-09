@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './rayCountdown_twitter.jpg';
 import './App.css';
 import Countdown ,{ zeroPad, calcTimeDelta, formatTimeDelta } from 'react-countdown';
 import  {TwitterTweetEmbed, TwitterMentionButton, TwitterTimelineEmbed } from 'react-twitter-embed';  
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={logo} className="App-logo" alt="logo" />
 
         <TwitterTweetEmbed  tweetId={'1567755780413161472'} />
 
